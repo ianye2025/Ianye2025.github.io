@@ -9,16 +9,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
     
     <style>
-        /* Fixes the white background during overscroll */
         html {
             background-color: #0f0c29; 
         }
 
-        /* Dynamic Background and Main Page Styles */
         body {
-            background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #121212);
-            background-size: 400% 400%; 
-            animation: gradientBG 15s ease infinite; 
+            /* === BACKGROUND IMAGE SETTINGS === */
+            background-image: url('_.jpeg'); /* Change this to your image's file name! */
+            
+            /* OPTION 1: REPEAT (What you asked for) */
+            /* This will tile the image horizontally and vertically forever */
+            background-repeat: repeat; 
+            
+            /* OPTION 2: FIXED COVER (Highly Recommended Modern Alternative) */
+            /* Remove the /* and */ from the two lines below to try it. 
+               This makes the image cover the screen and locks it in place while you scroll. */
+            /* background-size: cover; */
+            /* background-attachment: fixed; */
+            /* ================================= */
             
             color: #e0e0e0;
             font-family: 'Comfortaa', Arial, sans-serif; 
@@ -27,19 +35,15 @@
             min-height: 100vh; 
         }
 
-        /* The animation instructions for the background */
-        @keyframes gradientBG {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        /* Header section */
         .header-section {
             text-align: left; 
             margin-bottom: 40px;
             padding-bottom: 20px;
             border-bottom: 1px solid #444; 
+            /* Added a slight dark background to the text so it's readable over your background image */
+            background-color: rgba(0, 0, 0, 0.5); 
+            padding: 20px;
+            border-radius: 10px;
         }
         
         h1 {
@@ -50,15 +54,22 @@
         
         h2 {
             color: #ffffff;
-            margin-top: 40px; /* Gives extra breathing room above new sections */
+            margin-top: 40px; 
+            background-color: rgba(0, 0, 0, 0.5);
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 5px;
         }
 
         h3 {
             color: #ffffff;
         }
         
-        .project, .coursework, .contact-info {
+        .project, .skills, .contact-info {
             margin-bottom: 40px;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark semi-transparent box for readability */
+            padding: 20px;
+            border-radius: 10px;
         }
         
         hr {
@@ -68,19 +79,37 @@
             margin: 40px 0;
         }
 
-        /* Style for bullet point lists */
         ul {
-            line-height: 1.8; /* Spaces out the bullet points slightly */
+            line-height: 1.8; 
         }
 
-        /* Style for links (like your email) */
         a {
-            color: #8ab4f8; /* A pleasant light blue that pops on dark backgrounds */
+            color: #8ab4f8; 
             text-decoration: none;
         }
 
         a:hover {
-            text-decoration: underline; /* Adds an underline when hovered over */
+            text-decoration: underline; 
+        }
+
+        /* === NEW: COURSEWORK BADGE LAYOUT === */
+        .coursework-grid {
+            display: flex;
+            flex-wrap: wrap; /* Allows them to wrap to the next line if screen is small */
+            gap: 10px; /* Space between the badges */
+            margin-bottom: 40px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .course-badge {
+            background-color: #1a1a2e; /* Dark blue/gray background */
+            border: 1px solid #8ab4f8; /* Light blue border */
+            padding: 8px 15px;
+            border-radius: 20px; /* Makes them pill-shaped */
+            font-size: 0.9em;
+            color: #8ab4f8;
         }
     </style>
 </head>
@@ -91,6 +120,16 @@
         <p><strong>University of California, Los Angeles (UCLA)</strong></p>
         <p>B.S. in Electrical Engineering & B.S. in Physics</p>
     </div>
+
+    <h2>Highlighted Coursework</h2>
+    <div class="coursework-grid">
+        <span class="course-badge">Physics 1A: Mechanics</span>
+        <span class="course-badge">Physics 1B: Electromagnetism</span>
+        <span class="course-badge">Intro to Electrical Engineering</span>
+        <span class="course-badge">C++ Programming</span>
+        <span class="course-badge">Calculus & Analytic Geometry</span>
+        <span class="course-badge">Linear Algebra</span>
+        </div>
 
     <h2>Featured Projects</h2>
 
@@ -112,14 +151,13 @@
 
     <hr>
 
-    <h2>Relevant Coursework & Skills</h2>
-    <div class="coursework">
+    <h2>Technical Skills</h2>
+    <div class="skills">
         <ul>
-            <li><strong>Programming:</strong> Python (Pandas, NumPy, Matplotlib), C++, Basic R</li>
-            <li><strong>Electronics & Instrumentation:</strong> LTSpice, KiCad (PCB design), Oscilloscope, DAQ</li>
+            <li><strong>Programming:</strong> Python (Pandas, NumPy, Matplotlib), C++ (PID control, OOP), Basic R</li>
+            <li><strong>Electronics & Instrumentation:</strong> LTSpice, KiCad (PCB design), Oscilloscope, Waveform Generator, DAQ, ESP32</li>
             <li><strong>CAD & Manufacturing:</strong> Onshape, 3D Printing, Physical Fabrication</li>
-            <li><strong>Laboratory Skills:</strong> Experimental design, variable isolation, scientific reporting</li>
-            <li><strong>Relevant Coursework:</strong> (Add your specific UCLA physics/engineering courses here, e.g., Physics 1A, Circuits I, etc.)</li>
+            <li><strong>Laboratory Skills:</strong> Experimental design, variable isolation, scientific reporting, titration, gel electrophoresis</li>
         </ul>
     </div>
 
