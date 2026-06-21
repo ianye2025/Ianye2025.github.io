@@ -5,6 +5,14 @@
     <title>Ian Ye - Engineering Portfolio</title>
     
     <style>
+        /* Fixes the white background during overscroll */
+        html {
+            background-color: #0f0c29; /* Matches the dark colors of your gradient */
+            
+            /* Remove the /* and */ below if you want to completely disable the bouncy scroll effect */
+            /* overscroll-behavior: none; */
+        }
+
         /* Dynamic Background and Main Page Styles */
         body {
             /* Creates a gradient with multiple dark colors */
@@ -13,7 +21,7 @@
             animation: gradientBG 15s ease infinite; /* Animates the background over 15 seconds */
             
             color: #e0e0e0;
-            font-family: Arial, sans-serif;
+            font-family: Comfortaa, Arial, sans-serif; /* Added Arial as a fallback if Comfortaa doesn't load */
             margin: 0;
             padding: 40px;
             min-height: 100vh; /* Ensures the background covers the whole screen */
@@ -70,7 +78,6 @@
         <p>Custom PCB from scratch featuring a switch matrix of mechanical and hall effect keyswitches, alongside a unified UI dashboard.</p>
         
         <img src="pcb.png" alt="Close up of the custom keyboard PCB" width="400">
-        <!-- <img src="pcb-phys.png" alt="Physical PCB" width="400"> -->
         <p> Final keyboard still being soldered. Stay tuned!</p>
     </div>
 
@@ -78,8 +85,7 @@
         <h3>Remote controlled Airplane</h3>
         <p>Foam-bodied RC plane featuring custom CAD-designed motor mounts and ailerons.</p>
         
-        <!-- <img src="rc-plane-mount.png" alt="3D printed motor mount on the foam RC plane" width="400"> -->
-    </div>
+        </div>
 
 </body>
 </html>
