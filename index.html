@@ -2,32 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Engineering Portfolio</title>
+    <title>Ian Ye - Engineering Portfolio</title>
+    
+    <style>
+        body {
+            background-color: #121212; /* Dark/Black background */
+            color: #e0e0e0; /* Light gray text so it's easy on the eyes */
+            font-family: Arial, sans-serif; /* Clean, modern font */
+            margin: 0;
+            padding: 40px; /* Adds breathing room around the edges */
+        }
+        .header-section {
+            text-align: center; /* Centers your personal info */
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #444; /* Subtle line under your header */
+        }
+        h1 {
+            color: #ffffff; /* Bright white for your name */
+            margin-bottom: 5px;
+            font-size: 2.5em;
+        }
+        h2, h3 {
+            color: #ffffff; /* Bright white for project titles */
+        }
+        .project {
+            margin-bottom: 40px;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #444; /* Dark line separating projects */
+            margin: 40px 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>Project updates coming soon!</p>
+
+    <div class="header-section">
+        <h1>Ian Ye</h1>
+        <p><strong>University of California, Los Angeles (UCLA)</strong></p>
+        <p>B.S. in Electrical Engineering & B.S. in Physics</p>
+    </div>
+
     <h2>Featured Projects</h2>
 
-<!-- Project 1 -->
-<div class="project">
-    <h3>Mixed magnetic and mechanical Keyboard</h3>
-    <p>Custom PCB from scratch featuring a switch matrix of mechanical and hall effect keyswitches, alongside a unified UI dashboard.</p>
-    
-    <!-- Make sure the src matches your actual uploaded image name -->
-    <img src="pcb.png" alt="Close up of the custom keyboard PCB" width="500">
-    <img src="pcbphys.jpg" alt="PCB in KiCad" width="400">
-</div>
+    <div class="project">
+        <h3>Mixed magnetic and mechanical Keyboard</h3>
+        <p>Custom PCB from scratch featuring a switch matrix of mechanical and hall effect keyswitches, alongside a unified UI dashboard.</p>
+        
+        <img src="pcb.png" alt="Close up of the custom keyboard PCB" width="400">
+        <img src="pcb-phys.png" alt="Physical PCB" width="400">
+    </div>
 
-<hr> <!-- This creates a horizontal line to separate the projects -->
+    <hr> <div class="project">
+        <h3>Remote controlled Airplane</h3>
+        <p>Foam-bodied RC plane featuring custom CAD-designed motor mounts and ailerons.</p>
+        
+        <img src="rc-plane-mount.png" alt="3D printed motor mount on the foam RC plane" width="400">
+    </div>
 
-<!-- Project 2 -->
-<!-- <div class="project"> -->
-    <!-- <h3>Remote controlled Airplane</h3> -->
-    <!-- <p>Foam-bodied RC plane featuring custom CAD-designed motor mounts and ailerons.</p> -->
-    
-    <!-- Make sure the src matches your actual uploaded image name -->
-    <!-- <img src="rc-plane-mount.jpg" alt="3D printed motor mount on the foam RC plane" width="500"> -->
-</div>
 </body>
 </html>
