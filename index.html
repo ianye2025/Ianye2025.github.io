@@ -21,12 +21,12 @@
             animation: gradientBG 15s ease infinite; 
             
             color: #e0e0e0;
-            /* I added quotes around 'Comfortaa' which is best practice for imported fonts */
             font-family: 'Comfortaa', Arial, sans-serif; 
             margin: 0;
             padding: 40px;
             min-height: 100vh; 
         }
+
         /* The animation instructions for the background */
         @keyframes gradientBG {
             0% { background-position: 0% 50%; }
@@ -34,9 +34,9 @@
             100% { background-position: 0% 50%; }
         }
 
-        /* Header section (Now Left-Aligned) */
+        /* Header section */
         .header-section {
-            text-align: left; /* Changed from center to left */
+            text-align: left; 
             margin-bottom: 40px;
             padding-bottom: 20px;
             border-bottom: 1px solid #444; 
@@ -48,11 +48,16 @@
             font-size: 2.5em;
         }
         
-        h2, h3 {
+        h2 {
+            color: #ffffff;
+            margin-top: 40px; /* Gives extra breathing room above new sections */
+        }
+
+        h3 {
             color: #ffffff;
         }
         
-        .project {
+        .project, .coursework, .contact-info {
             margin-bottom: 40px;
         }
         
@@ -62,15 +67,31 @@
             background-color: #444;
             margin: 40px 0;
         }
+
+        /* Style for bullet point lists */
+        ul {
+            line-height: 1.8; /* Spaces out the bullet points slightly */
+        }
+
+        /* Style for links (like your email) */
+        a {
+            color: #8ab4f8; /* A pleasant light blue that pops on dark backgrounds */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline; /* Adds an underline when hovered over */
+        }
     </style>
 </head>
 <body>
 
     <div class="header-section">
         <h1>Ian Ye</h1>
-        <p><strong>University of California, Los Angeles (UCLA), Class of 2028</strong></p>
+        <p><strong>University of California, Los Angeles (UCLA)</strong></p>
         <p>B.S. in Electrical Engineering & B.S. in Physics</p>
     </div>
+
     <h2>Featured Projects</h2>
 
     <div class="project">
@@ -78,14 +99,41 @@
         <p>Custom PCB from scratch featuring a switch matrix of mechanical and hall effect keyswitches, alongside a unified UI dashboard.</p>
         
         <img src="pcb.png" alt="Close up of the custom keyboard PCB" width="400">
-        <p> Final keyboard still being soldered. Stay tuned!</p>
+        <p>Final keyboard still being soldered. Stay tuned!</p>
     </div>
 
-    <hr> <div class="project">
+    <hr> 
+
+    <div class="project">
         <h3>Remote controlled Airplane</h3>
         <p>Foam-bodied RC plane featuring custom CAD-designed motor mounts and ailerons.</p>
         
         </div>
+
+    <hr>
+
+    <h2>Relevant Coursework & Skills</h2>
+    <div class="coursework">
+        <ul>
+            <li><strong>Programming:</strong> Python (Pandas, NumPy, Matplotlib), C++, Basic R</li>
+            <li><strong>Electronics & Instrumentation:</strong> LTSpice, KiCad (PCB design), Oscilloscope, DAQ</li>
+            <li><strong>CAD & Manufacturing:</strong> Onshape, 3D Printing, Physical Fabrication</li>
+            <li><strong>Laboratory Skills:</strong> Experimental design, variable isolation, scientific reporting</li>
+            <li><strong>Relevant Coursework:</strong> (Add your specific UCLA physics/engineering courses here, e.g., Physics 1A, Circuits I, etc.)</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <h2>Contact</h2>
+    <div class="contact-info">
+        <p>I'm always open to discussing engineering projects, research, or professional opportunities.</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:ehamyan24@g.ucla.edu">ehamyan24@g.ucla.edu</a></li>
+            <li><strong>Phone:</strong> (408) 585-8245</li>
+            <li><strong>Location:</strong> Los Angeles, CA</li>
+        </ul>
+    </div>
 
 </body>
 </html>
