@@ -4,29 +4,29 @@
     <meta charset="UTF-8">
     <title>Ian Ye - Engineering Portfolio</title>
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    
     <style>
         /* Fixes the white background during overscroll */
         html {
-            background-color: #0f0c29; /* Matches the dark colors of your gradient */
-            
-            /* Remove the /* and */ below if you want to completely disable the bouncy scroll effect */
-            /* overscroll-behavior: none; */
+            background-color: #0f0c29; 
         }
 
         /* Dynamic Background and Main Page Styles */
         body {
-            /* Creates a gradient with multiple dark colors */
             background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #121212);
-            background-size: 400% 400%; /* Stretches it out so it can move */
-            animation: gradientBG 15s ease infinite; /* Animates the background over 15 seconds */
+            background-size: 400% 400%; 
+            animation: gradientBG 15s ease infinite; 
             
             color: #e0e0e0;
-            font-family: Comfortaa, Arial, sans-serif; /* Added Arial as a fallback if Comfortaa doesn't load */
+            /* I added quotes around 'Comfortaa' which is best practice for imported fonts */
+            font-family: 'Comfortaa', Arial, sans-serif; 
             margin: 0;
             padding: 40px;
-            min-height: 100vh; /* Ensures the background covers the whole screen */
+            min-height: 100vh; 
         }
-
         /* The animation instructions for the background */
         @keyframes gradientBG {
             0% { background-position: 0% 50%; }
