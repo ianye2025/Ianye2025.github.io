@@ -15,15 +15,13 @@
 
         body {
             /* === BACKGROUND IMAGE SETTINGS === */
-            /* Ensure the image name here perfectly matches your file name and is in the same folder */
             background-image: url('backg.jpeg'); 
-            
-            /* OPTION 1: REPEAT */
-            /* background-repeat: repeat;  */
             
             /* OPTION 2: FIXED COVER */
             background-size: cover; 
-            background-attachment: fixed;
+            background-position: center center; /* Centers the image */
+            background-attachment: fixed; /* Locks it in place during scroll */
+            background-repeat: no-repeat; /* Prevents tiling */
             
             color: #e0e0e0;
             font-family: 'Comfortaa', Arial, sans-serif; 
