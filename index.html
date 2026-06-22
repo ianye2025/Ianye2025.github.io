@@ -15,18 +15,15 @@
 
         body {
             /* === BACKGROUND IMAGE SETTINGS === */
-            background-image: url('_.jpeg'); /* Change this to your image's file name! */
+            /* Ensure the image name here perfectly matches your file name and is in the same folder */
+            background-image: url('_.jpeg'); 
             
-            /* OPTION 1: REPEAT (What you asked for) */
-            /* This will tile the image horizontally and vertically forever */
-            /* background-repeat: repeat;  */
+            /* OPTION 1: REPEAT */
+            background-repeat: repeat; 
             
-            /* OPTION 2: FIXED COVER (Highly Recommended Modern Alternative) */
-            /* Remove the /* and */ from the two lines below to try it. 
-               This makes the image cover the screen and locks it in place while you scroll. */
-            background-size: cover;
-            background-attachment: fixed;
-            /* ================================= */
+            /* OPTION 2: FIXED COVER */
+            /* background-size: cover; */
+            /* background-attachment: fixed; */
             
             color: #e0e0e0;
             font-family: 'Comfortaa', Arial, sans-serif; 
@@ -40,10 +37,6 @@
             margin-bottom: 40px;
             padding-bottom: 20px;
             border-bottom: 1px solid #444; 
-            /* Added a slight dark background to the text so it's readable over your background image */
-            background-color: rgba(0, 0, 0, 0.5); 
-            padding: 20px;
-            border-radius: 10px;
         }
         
         h1 {
@@ -55,10 +48,6 @@
         h2 {
             color: #ffffff;
             margin-top: 40px; 
-            background-color: rgba(0, 0, 0, 0.5);
-            display: inline-block;
-            padding: 5px 10px;
-            border-radius: 5px;
         }
 
         h3 {
@@ -67,9 +56,6 @@
         
         .project, .skills, .contact-info {
             margin-bottom: 40px;
-            background-color: rgba(0, 0, 0, 0.5); /* Dark semi-transparent box for readability */
-            padding: 20px;
-            border-radius: 10px;
         }
         
         hr {
@@ -92,22 +78,19 @@
             text-decoration: underline; 
         }
 
-        /* === NEW: COURSEWORK BADGE LAYOUT === */
+        /* === COURSEWORK BADGE LAYOUT === */
         .coursework-grid {
             display: flex;
-            flex-wrap: wrap; /* Allows them to wrap to the next line if screen is small */
-            gap: 10px; /* Space between the badges */
+            flex-wrap: wrap; 
+            gap: 10px; 
             margin-bottom: 40px;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 20px;
-            border-radius: 10px;
         }
 
         .course-badge {
-            background-color: #1a1a2e; /* Dark blue/gray background */
-            border: 1px solid #8ab4f8; /* Light blue border */
+            background-color: #1a1a2e; 
+            border: 1px solid #8ab4f8; 
             padding: 8px 15px;
-            border-radius: 20px; /* Makes them pill-shaped */
+            border-radius: 20px; 
             font-size: 0.9em;
             color: #8ab4f8;
         }
@@ -121,7 +104,6 @@
         <p>B.S. in Electrical Engineering & B.S. in Physics</p>
     </div>
 
-   
     <h2>Featured Projects</h2>
 
     <div class="project">
@@ -137,11 +119,11 @@
     <div class="project">
         <h3>Remote controlled Airplane</h3>
         <p>Foam-bodied RC plane featuring custom CAD-designed motor mounts and ailerons.</p>
-        
-        </div>
+    </div>
 
     <hr>
- <h2>Highlighted Coursework</h2>
+
+    <h2>Highlighted Coursework</h2>
     <div class="coursework-grid">
         <span class="course-badge">Physics 1A: Mechanics</span>
         <span class="course-badge">Physics 1B: Electromagnetism</span>
@@ -149,7 +131,7 @@
         <span class="course-badge">C++ Programming</span>
         <span class="course-badge">Calculus & Analytic Geometry</span>
         <span class="course-badge">Linear Algebra</span>
-        </div>
+    </div>
 
     <h2>Technical Skills</h2>
     <div class="skills">
